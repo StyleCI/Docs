@@ -1,1 +1,3 @@
-# StyleCI Docs
+- ## Introduction
+    - [What is StyleCI](/{{version}}/introduction)
+    - [FAQ's](/{{version}}/faqs)
