@@ -1,0 +1,27 @@
+{
+    "name": "styleci/docs",
+    "description": "The StyleCI Docs",
+    "keywords": ["docs", "alt-three", "styleci", "Docs", "Alt Three", "StyleCI"],
+    "authors": [
+        {
+            "name": "James Brooks",
+            "email": "james@alt-three.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@alt-three.com"
+        },
+        {
+            "name": "Joseph Cohen",
+            "email": "joe@alt-three.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
