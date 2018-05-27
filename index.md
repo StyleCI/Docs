@@ -1,4 +1,6 @@
 - ## Navigation
     - [Introduction](/)
     - [Configuration](/configuration)
+    - [PHP Fixers](/fixers)
+    - [PHP Presets](/presets)
     - [FAQ's](/faqs)
