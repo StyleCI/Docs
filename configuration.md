@@ -4,8 +4,6 @@ StyleCI provides two ways to configure your repos. You can apply configuration e
 
 > {info} Setting configuration through the browser will override all config set in the .styleci.yml file.
 
-> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the .styleci.yml file.
-
 ## Fixing Strategies
 
 Our PHP fixing works by applying fixers to files that fix specific things. By comparison, our new language support works differently by reprinting the entire file. It may seem like there's less being fixed because they are fewer options, but in fact, this is not the case. Everything is being standardized, and the configuration allows you to choose how you want things to look.
@@ -35,7 +33,7 @@ Our default configuration is as follows:
     not-name: "*.blade.php"
 ```
 
-TODO.
+> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the .styleci.yml file.
 
 ## Multiple Languages
 
