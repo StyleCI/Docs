@@ -1,3 +1,4 @@
-- ## Introduction
-    - [What is StyleCI](/)
+- ## Navigation
+    - [Introduction](/)
+    - [Configuration](/configuration)
     - [FAQ's](/faqs)
