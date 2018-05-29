@@ -1,6 +1,10 @@
 - ## Navigation
     - [Introduction](/)
+    - [FAQ's](/faqs)
     - [Configuration](/configuration)
     - [PHP Fixers](/fixers)
     - [PHP Presets](/presets)
-    - [FAQ's](/faqs)
+    - [Automation](/automation)
+    - [Badges](/badges)
+    - [Slack](/slack)
+    - [Change Log](/change-log)
