@@ -4,10 +4,7 @@ StyleCI provides two ways to configure your repos. You can apply configuration e
 
 > {info} Setting configuration through the browser will override all config set in the .styleci.yml file.
 
-## Fixing Strategies
-
-Our PHP fixing works by applying fixers to files that fix specific things. By comparison, our new language support works differently by reprinting the entire file. It may seem like there's less being fixed because they are fewer options, but in fact, this is not the case. Everything is being standardized, and the configuration allows you to choose how you want things to look.
-
+<a name="choosing-languages"></a>
 ## Choosing Languages
 
 If you are on a newer paid plan, then you will have access to support for fixing PHP, JS, CSS, Vue.js, Python, and more. If you are on the open source plan, then you will get support for PHP baked in.
@@ -16,6 +13,12 @@ The format of configuration files when configuring multiple languages is differe
 
 > {info} By default, we will assume you have a PHP repo, and so if you provide no config, you will get all the defaults.
 
+<a name="fixing-strategies"></a>
+## Fixing Strategies
+
+Our PHP fixing works by applying fixers to files that fix specific things. By comparison, our new language support works differently by reprinting the entire file. It may seem like there's less being fixed because they are fewer options, but in fact, this is not the case. Everything is being standardized, and the configuration allows you to choose how you want things to look.
+
+<a name="php-only-mode"></a>
 ## PHP Only Mode
 
 Our default configuration is as follows:
@@ -35,6 +38,7 @@ Our default configuration is as follows:
 
 > {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the .styleci.yml file.
 
+<a name="multiple-languages"></a>
 ## Multiple Languages
 
 In order to accommodate multiple languages, we are adding top-level config to configure each language.
@@ -52,22 +56,4 @@ py: false
 
 You can enable the languages you want by either setting the value for each to true, to a configuration map.
 
-### PHP
-
-TODO.
-
-### JS/TS
-
-TODO.
-
-### CSS/SCSS/Less
-
-TODO.
-
-### Vue.js
-
-TODO.
-
-### Python
-
-TODO.
+> {info} We're in the process of migrating our documenation. You can find the original docs [here](https://styleci.readme.io/docs/multi-lang).
