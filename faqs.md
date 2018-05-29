@@ -8,7 +8,7 @@ By default, StyleCI only requests public repo scopes from GitHub. If you are get
 <a name="turn-off-notifications"></a>
 ## How do I turn off notification emails
 
-Don't want to get emailed when things change? No problem. You can configure your notification level on the account page. Visit https://styleci.io/account#profile to choose from the 3 notification levels available.
+Don't want to get emailed when things change? No problem. You can configure your notification level on the account page. Visit https://github.styleci.io/account#profile to choose from the 3 notification levels available.
 
 <a name="not-receiving-email-notifications"></a>
 ## Why am I not receiving notification emails
@@ -23,7 +23,8 @@ Email notifications are sent from us at notify@styleci.io, and support emails fr
 
 ### Check your GitHub email
 
-We send emails to email address that you set as your primary account on GitHub. You can also confirm the email address that we have for you by visiting your account page at https://styleci.io/account#profile.
-Check your notification settings
+We send emails to email address that you set as your primary account on GitHub. You can also confirm the email address that we have for you by visiting your account page at https://github.styleci.io/account#profile.
 
-You might have turned off analysis notifications entirely, or partially on your account settings. To check what notification settings you have, visit https://styleci.io/account#profile.
+**Check your notification settings.**
+
+You might have turned off analysis notifications entirely, or partially on your account settings. To check what notification settings you have, visit https://github.styleci.io/account#profile.
