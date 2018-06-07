@@ -1,6 +1,6 @@
 # Configuration
 
-StyleCI provides two ways to configure your repos. You can apply configuration either by committing a .styleci.yml file to the root of your repo, or by visiting the settings page for your repo, and applying it there.
+StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the root of your repo, or by visiting the settings page for your repo, and applying it there.
 
 Configuration is formatted as a series of keys and their values, like the following:
 
@@ -15,11 +15,11 @@ key4:
   - value4
 ```
 
-As can be seen, key4 has a single value (value4) and key1 has two sub-keys (key2 and key3), each of which have their own values (value1/value2 and value3, respectively). A StyleCI configuration, written like above in either your .styleci.yml file or in the settings page, is therefore like a tree of options.
+As can be seen, key4 has a single value (value4) and key1 has two sub-keys (key2 and key3), each of which have their own values (value1/value2 and value3, respectively). A StyleCI configuration, written like above in either your `.styleci.yml` file or in the settings page, is therefore like a tree of options.
 
-> {info} Setting configuration through the browser will override all config set in the .styleci.yml file.
+> {info} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
 
-> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the .styleci.yml file.
+> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the `.styleci.yml` file.
 
 <a name="choosing-languages"></a>
 ## Choosing Languages
@@ -38,9 +38,9 @@ Our PHP fixing works by applying fixers to files that fix specific things. By co
 <a name="php-only-mode"></a>
 ## PHP Only Mode
 
-In the absence of an open source plan, StyleCI will expect your configuration to be formatted in a PHP-only manner. Note that configuration written this way can later be embedded into a multiple-language format configuration if you change to a plan that accommodates this.
+In the absence of a paid plan, StyleCI will expect your configuration to be formatted in a PHP-only manner. Note that configuration written this way can later be embedded into a multiple-language format configuration if you change to a plan that accommodates this.
 
-To demonstrate this, below is the contents of an example .styleci.yml file, using all PHP-only config features available:
+To demonstrate this, below is the contents of an example `.styleci.yml` file, using all PHP-only config features available:
 
 ```yaml
 preset: recommended
@@ -82,13 +82,13 @@ Any key shown above that is not included will be replaced with its
 
 ### Presets
 
-We provide a few premade configurations that tend to be useful. After choosing a preset with the 'preset' key as above, you can add extra config that will override settings your preset contains. The 'recommended' preset is enabled by default.
+We provide a few premade configurations that tend to be useful. After choosing a preset with the `preset` key as above, you can add extra config that will override settings your preset contains. The `recommended` preset is enabled by default.
 
 Check out the [Presets](presets) page for more details.
 
 ### Risky
 
-Some of our fixers do things that can change code behavior in weird cases. It's generally not an issue, but if you're concerned about an odd piece of code you've written clashing with these fixes, you can disable them by setting 'risky' to false. It'll be set to true by default.
+Some of our fixers do things that can change code behavior in weird cases. It's generally not an issue, but if you're concerned about an odd piece of code you've written clashing with these fixes, you can disable them by setting `risky` to false. It'll be set to true by default.
 
 If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers), denoted by a warning of changing code behavior below their name.
 
@@ -100,7 +100,7 @@ These two keys allow you to cherry-pick which fixers will and won't be used, by 
 
 ### Finder
 
-Our fixers will look everywhere except for a few preset paths by default. However, you can fine-tune which places to fix and which to ignore with the 'finder' key. See more on how this works [here](finder).
+Our fixers will look everywhere except for a few preset paths by default. However, you can fine-tune which places to fix and which to ignore with the `finder` key. See more on how this works [here](finder).
 
 <a name="multiple-languages"></a>
 ## Multiple Languages
@@ -150,11 +150,11 @@ css: false
 py: true
 ```
 
-As can be seen, the 'php', 'js', 'ts', 'css' and 'py' keys each allow for PHP, Javascript, Typescript, CSS and Python configuration respectively. Writing 'false' after such a key disables fixing for that language; writing 'true' enables our default fixes for it. If you want to customize, you can instead write out the configuration manually under the language you want.
+As can be seen, the `php`, `js`, `ts`, `css` and `py` keys each allow for PHP, Javascript, Typescript, CSS and Python configuration respectively. Writing `false` after such a key disables fixing for that language; writing `true` enables our default fixes for it. If you want to customize, you can instead write out the configuration manually under the language you want.
 
 In the above example, it can be seen that custom PHP and Javascript configurations are used, along with the default Python one and no other languages.
 
-> {info} If you removed the 'ts' or 'css' keys, the behavior would remain the same; removing any such language's key replaces it with its default behavior, ie. 'true' for PHP and 'false' for all others.
+> {info} If you removed the `ts` or `css` keys, the behavior would remain the same; removing any such language's key replaces it with its default behavior, ie. `true` for PHP and `false` for all others.
 
 You may notice that the PHP and Javascript configurations look different. In fact, every languge has its own separate configuration options, with PHP retaining the PHP-only ones.
 
@@ -162,7 +162,7 @@ We describe each new language's options below. For all languages, the [finder](f
 
 ### Javascript Config
 
-Setting 'js: true' translates to the following:
+Setting `js: true` translates to the following:
 
 ```yaml
 js:
@@ -187,18 +187,18 @@ js:
       - "*.min.js"
 ```
 
-* Valid values for tab-width are integers between 2 and 8. We'd recommend either 2 or 4.
-* Valid values for use-tabs are false and true.
-* Valid values for print-width are integers between 20 and 200. We'd recommend 80, 100, or 120.
-* Valid values for double-quotes are false and true.
-* Valid values for trailing-commas are none, es5 (ECMAScript 5 standard), or all.
-* Valid values for semicolons are false and true.
-* Valid values for arrow-parens are avoid and always.
-* Valid values for bracket-spacing are false and true.
+* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `use-tabs` are `false` and `true`.
+* Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
+* Valid values for `double-quotes` are `false` and `true`.
+* Valid values for `trailing-commas` are `none`, `es5`, or `all`.
+* Valid values for `semicolons` are `false` and `true`.
+* Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-spacing` are `false` and `true`.
 
 ### Typescript Config
 
-Setting 'ts: true' translates to the following:
+Setting `ts: true` translates to the following:
 
 ```yaml
 ts:
@@ -219,18 +219,18 @@ ts:
     name: "*.ts"
 ```
 
-* Valid values for tab-width are integers between 2 and 8. We'd recommend either 2 or 4.
-* Valid values for use-tabs are false and true.
-* Valid values for print-width are integers between 20 and 200. We'd recommend 80, 100, or 120.
-* Valid values for double-quotes are false and true.
-* Valid values for trailing-commas are none, es5, or all.
-* Valid values for semicolons are false and true.
-* Valid values for arrow-parens are avoid and always.
-* Valid values for bracket-spacing are false and true.
+* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `use-tabs` are `false` and `true`.
+* Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
+* Valid values for `double-quotes` are `false` and `true`.
+* Valid values for `trailing-commas` are `none`, `es5`, or `all`.
+* Valid values for `semicolons` are `false` and `true`.
+* Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-spacing` are `false` and `true`.
 
 ### CSS Config
 
-Setting 'css: true' translates to the following:
+Setting `css: true` translates to the following:
 
 ```yaml
 css:
@@ -250,14 +250,14 @@ css:
       - "*.less"
 ```
 
-* Valid values for tab-width are integers between 2 and 8. We'd recommend either 2 or 4.
-* Valid values for use-tabs are false and true.
-* Valid values for print-width are integers between 20 and 200. We'd recommend 80, 100, or 120.
-* Valid values for double-quotes are false and true.
+* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `use-tabs` are `false` and `true`.
+* Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
+* Valid values for `double-quotes` are `false` and `true`.
 
 ### Vue Config
 
-Setting 'vue: true' translates to the following:
+Setting `vue: true` translates to the following:
 
 ```yaml
 vue:
@@ -278,20 +278,20 @@ vue:
     name: "*.vue"
 ```
 
-* Valid values for tab-width are integers between 2 and 8. We'd recommend either 2 or 4.
-* Valid values for use-tabs are false and true.
-* Valid values for print-width are integers between 20 and 200. We'd recommend 80, 100, or 120.
-* Valid values for double-quotes are false and true.
-* Valid values for trailing-commas are none, es5, or all.
-* Valid values for semicolons are false and true.
-* Valid values for arrow-parens are avoid and always.
-* Valid values for bracket-spacing are false and true.
+* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `use-tabs` are `false` and `true`.
+* Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
+* Valid values for `double-quotes` are `false` and `true`.
+* Valid values for `trailing-commas` are `none`, `es5`, or `all`.
+* Valid values for `semicolons` are `false` and `true`.
+* Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-spacing` are `false` and `true`.
 
 ### Python Config
 
 > {info} Support for Python is currently in beta; a host of features, such as configuring indentation, are under development and will become available as the beta progresses. Any feedback you have on these features is a big help.
 
-Setting 'py: true' translates to the following:
+Setting `py: true` translates to the following:
 
 ```yaml
 py:
@@ -305,7 +305,7 @@ py:
     name: "*.py"
 ```
 
-* The version key specifies the Python grammar version to use. 2 and 3 are allowed values, 3 being the default.
+* The `version` key specifies the Python grammar version to use. `2` and `3` are allowed values, `3` being the default.
 
 <a name="default-configuration"></a>
 ## Default Configuration
