@@ -84,23 +84,23 @@ Any key shown above that is not included will be replaced with its
 
 We provide a few premade configurations that tend to be useful. After choosing a preset with the 'preset' key as above, you can add extra config that will override settings your preset contains. The 'recommended' preset is enabled by default.
 
-Check out the [Presets](presets.md) page for more details.
+Check out the [Presets](presets) page for more details.
 
 ### Risky
 
 Some of our fixers do things that can change code behavior in weird cases. It's generally not an issue, but if you're concerned about an odd piece of code you've written clashing with these fixes, you can disable them by setting 'risky' to false. It'll be set to true by default.
 
-If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers.md), denoted by a warning of changing code behavior below their name.
+If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers), denoted by a warning of changing code behavior below their name.
 
 ### Enabled/Disabled
 
-These two keys allow you to cherry-pick which fixers will and won't be used, by bullet-point listing them as in the example. Have a look [here](fixers.md) for details on each fixer.
+These two keys allow you to cherry-pick which fixers will and won't be used, by bullet-point listing them as in the example. Have a look [here](fixers) for details on each fixer.
 
 > {danger} Some fixers are incompatible with each other - make sure not to enable any such two at once, or the fix will fail.
 
 ### Finder
 
-Our fixers will look everywhere except for a few preset paths by default. However, you can fine-tune which places to fix and which to ignore with the 'finder' key. See more on how this works [here](finder.md).
+Our fixers will look everywhere except for a few preset paths by default. However, you can fine-tune which places to fix and which to ignore with the 'finder' key. See more on how this works [here](finder).
 
 <a name="multiple-languages"></a>
 ## Multiple Languages
@@ -150,7 +150,7 @@ css: false
 py: true
 ```
 
-As can be seen, the 'php', 'js', 'ts', 'css' and 'py' keys each allow for PHP, Javascript, Typescript, CSS and Python configuration, respectively. Writing 'false' after such a key disables fixing for that language; writing 'true' enables our default fixes for it. If you want to customize, you can instead write out the configuration manually under the language you want.
+As can be seen, the 'php', 'js', 'ts', 'css' and 'py' keys each allow for PHP, Javascript, Typescript, CSS and Python configuration respectively. Writing 'false' after such a key disables fixing for that language; writing 'true' enables our default fixes for it. If you want to customize, you can instead write out the configuration manually under the language you want.
 
 In the above example, it can be seen that custom PHP and Javascript configurations are used, along with the default Python one and no other languages.
 
@@ -158,7 +158,7 @@ In the above example, it can be seen that custom PHP and Javascript configuratio
 
 You may notice that the PHP and Javascript configurations look different. In fact, every languge has its own separate configuration options, with PHP retaining the PHP-only ones.
 
-We describe each new language's options below. For all languages, the [finder](finder.md) key works the same.
+We describe each new language's options below. For all languages, the [finder](finder) key works the same.
 
 ### Javascript Config
 
@@ -191,7 +191,7 @@ js:
 * Valid values for use-tabs are false and true.
 * Valid values for print-width are integers between 20 and 200. We'd recommend 80, 100, or 120.
 * Valid values for double-quotes are false and true.
-* Valid values for trailing-commas are none, es5, or all.
+* Valid values for trailing-commas are none, es5 (ECMAScript 5 standard), or all.
 * Valid values for semicolons are false and true.
 * Valid values for arrow-parens are avoid and always.
 * Valid values for bracket-spacing are false and true.

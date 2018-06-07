@@ -1,6 +1,6 @@
 # Finder Configuration
 
-The Finder configuration feature lets you nitpick exactly which files will and won't be fixed by StyleCI. By default, StyleCI will try and fix everything except for a few preset places (see the default configuration [here](configuration.md) to see which ones); our Finder options are the go-to fix for changing that behavior.
+The Finder configuration feature lets you nitpick exactly which files will and won't be fixed by StyleCI. By default, StyleCI will try and fix everything except for a few preset places (see the default configuration [here](configuration) to see which ones); our Finder options are the go-to fix for changing that behavior.
 
 Take a look at the below example of a PHP-only configuration:
 
