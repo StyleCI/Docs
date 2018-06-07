@@ -36,16 +36,19 @@ Each option is followed by an arbitrarily long bullet-point list of strings to m
 
 We go through each of these options below.
 
+<a name="exclude"></a>
 ## Exclude
 
 Use the `exclude` option to exclude files in a given directory at the root of the project. In the above example, any path in the "tests", "docs" or "log" directories at the project root will be ignored.
 
+<a name="name"></a>
 ## Name
 
 Use `name` to identify the only file names to be analyzed. This is akin to a whitelist of file names to be checked. In the example, only "\*.php" file names will be fixed.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="not-name"></a>
 ## Not-Name
 
 Use `not-name` to identify file names to not be analyzed. It acts as the reverse of `name`, blacklisting files. In the example, "\*Stub.php" and "\*.blade.php" files will be ignored.
@@ -54,12 +57,14 @@ If a file matches both `name` and `not-name`, it will be ignored.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="contains"></a>
 ## Contains
 
 Use `contains` to only fix files whose contents contain certain strings or regexes. In the example, only files containing the string "Foo" will be fixed.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="not-contains"></a>
 ## Not-Contains
 
 Use `not-contains` to ignore files whose contents contain certain strings or regexes. In the example, files containing the string "config" will be ignored.
@@ -68,12 +73,14 @@ If a file matches both `contains` and `not-contains`, it will be ignored.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="path"></a>
 ## Path
 
 Use `path` to only fix files whose path matches any one element of a list of strings or regexes. In the example, only files with a path containing "foo/Stuff" will be fixed. The path this is checked against will be relative to the project root.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="not-path"></a>
 ## Not-Path
 
 Use `not-path` to ignore files whose path contains any element of a list of strings or regexes. In the example, files with a path containing "libraries" will be ignored.
@@ -82,6 +89,7 @@ If a file path matches both `path` and `not-path`, it will be ignored.
 
 > {info} Regular expressions may be used with this option.
 
+<a name="depth"></a>
 ## Depth
 
 Use `depth` to identify how long a file's path should be, relative to the project root, to be fixed.
