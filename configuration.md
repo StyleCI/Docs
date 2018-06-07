@@ -26,7 +26,7 @@ As can be seen, key4 has a single value (value4) and key1 has two sub-keys (key2
 
 If you are on a newer paid plan, then you will have access to support for fixing PHP, JS, CSS, Vue.js, Python, and more. If you are on the open source plan, then you will get support for PHP baked in.
 
-The configuration format differs significantly between PHP and other languages. As well as this, the config file format used for multiple languages rather than just PHP will only be accepted if your plan supports it.
+The configuration format differs significantly between PHP and other languages. As well as this, the format used for multiple languages rather than just PHP will only be accepted if your plan supports it.
 
 > {info} By default, we will assume you have a PHP repo, and so if you provide no config, you will get all the defaults.
 
@@ -38,7 +38,7 @@ Our PHP fixing works by applying fixers to files that fix specific things. By co
 <a name="php-only-mode"></a>
 ## PHP Only Mode
 
-In the absence of a paid plan, StyleCI will expect your configuration to be formatted in a PHP-only manner. Note that configuration written this way can later be embedded into a multiple-language format configuration if you change to a plan that accommodates this.
+In the absence of a paid plan, StyleCI will expect your configuration to be formatted in a PHP-only manner. Note that configuration written this way can later be embedded into a multiple-language format if you change to a plan that accommodates this.
 
 To demonstrate this, below is the contents of an example `.styleci.yml` file, using all PHP-only config features available:
 
