@@ -95,7 +95,7 @@ Each element of the list of strings has some possible formats, where N is a non-
 * `">= N"`: Only fix files with path depth greater than or equal to N.
 * `"> N"`: Only fix files with path depth greater than N.
 * `"N"` : Only fix files with path depth equal to N. This is
-  equivalent to saying "== N" explicitly.
+  equivalent to saying `"== N"` explicitly.
 
 Listing multiple depths means all of them must be true. For instance, if you listed `"<= 3"`, `"!= 2"` and `"> 0"`, only paths of depth 3 or 1 would be considered.
 
