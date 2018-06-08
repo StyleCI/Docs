@@ -1,6 +1,6 @@
 # Configuration
 
-StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the root of your repo, or by visiting the settings page for your repo, and applying it there.
+StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there.
 
 Configuration is formatted as a series of keys and their values, like the following:
 
@@ -15,16 +15,27 @@ key4:
   - value4
 ```
 
-As can be seen, key4 has a single value (value4) and key1 has two sub-keys (key2 and key3), each of which have their own values (value1/value2 and value3, respectively). A StyleCI configuration, written like above in either your `.styleci.yml` file or in the settings page, is therefore like a tree of options.
+As can be seen, `key4` has a single value (`value4`) and `key1` has two sub-keys (`key2` and `key3`), each of which have their own values (`value1`+`value2` and `value3`, respectively). A StyleCI configuration, written like above in either your `.styleci.yml` file or in the settings page, thus forms a tree of nested options.
+
+Note that the final bullet-point lists of values cannot themselves be nested. If there is only one element in them, you can omit the bullet like so:
+
+```yaml
+key1:
+  key2:
+    - value1
+    - value2
+  key3: value3
+key4: value4
+```
 
 > {info} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
 
-> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page as that's the only part of the configuration not available through the `.styleci.yml` file.
+> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
 
 <a name="choosing-languages"></a>
 ## Choosing Languages
 
-If you are on a newer paid plan, then you will have access to support for fixing PHP, JS, CSS, Vue.js, Python, and more. If you are on the open source plan, then you will get support for PHP baked in.
+If you're on a newer paid plan, then you'll have access to support for fixing PHP, JS, CSS, Vue.js, Python, and more. If you're on the open source plan, then you'll get support for standalone PHP.
 
 The configuration format differs significantly between PHP and other languages. As well as this, the format used for multiple languages rather than just PHP will only be accepted if your plan supports it.
 
@@ -33,7 +44,7 @@ The configuration format differs significantly between PHP and other languages. 
 <a name="fixing-strategies"></a>
 ## Fixing Strategies
 
-Our PHP fixing works by applying fixers to files that fix specific things. By comparison, our new language support works differently by reprinting the entire file. It may seem like there's less being fixed because they are fewer options, but in fact, this is not the case. Everything is being standardized, and the configuration allows you to choose how you want things to look.
+Our PHP fixing works by applying [fixers](fixers) to files that fix specific things. By comparison, support for other, newer languages works differently by reprinting the entire file. For these languages it may seem like less is being fixed due to a lack of options, but this is not the case; many fixes for these languages occur internally, and don't require the same depth of control as what our PHP service provides.
 
 <a name="php-only-mode"></a>
 ## PHP-Only Mode
@@ -48,7 +59,7 @@ If you have a paid plan, you'll have access to configuration features for every 
 <a name="default-configuration"></a>
 ## Default Configuration
 
-Our default (PHP-only) configuration, used to define any undefined keys in your configuration, is as follows:
+Our default (PHP-only) configuration, used to define any keys you've omitted, is as follows:
 
 ```yaml
   preset: recommended
