@@ -2,8 +2,7 @@
 
 Welcome to StyleCI - The Web Coding Style Service!
 
-StyleCI provides checks for both your open and closed source repos. By analyzing every push or pull request made on your repo, StyleCI ensures that your code is always written against the standards you want it to be.
-Connect with GitHub
+StyleCI provides checks for both your open and closed source repos. By analyzing every push or pull request made on your codebase, StyleCI ensures that your code is always written against the standards you want it to be.
 
 <a name="getting-started"></a>
 ## Getting Started
@@ -17,16 +16,11 @@ To get started, click the Login button on our homepage. You'll then have a choic
 
 PHP support in StyleCI is free for all open source projects. We offer various plans for private repositories and support for PHP, JS, CSS, Vue.js, Python, and more! You can upgrade or downgrade your plan on your account page.
 
-You can still access private repos from the open source plan if someone else in your organization is subscribed to a paid plan that supports private organizations. To view these repos, you need to visit the the profile tab, and under the Access heading, change this to private. This will allow us to read your private repo memberships, after you've approved this change on GitHub.
-
-<a name="vat-ids"></a>
-## VAT IDs
-
-If you are using StyleCI on behalf of VAT registered business within the EU, please provide us with your VAT ID. This can be done via the account page.
+You can still access private repos from the open source plan if someone else in your organization is subscribed to a paid plan that supports private organizations. To view these repos, visit the the profile tab and choose 'private' under the Access heading. This will allow us to read your private repo memberships, after you've approved this change on GitHub.
 
 <a name="your-repos"></a>
 ## Your Repos
 
-All your repos are listed in the repos tab of your account page. You can enable repos you want us to analyse here. After enabling a repo, you can visit it by clicking the "Show Analyses" button. At this point, you have the option to modify it's settings, or just go ahead, and press that "Analyse Now" button. You can select the branch you want to look at through the branch select drop down on the left. For information about configuration, please check out the configuration section of our docs.
+All your repos are listed in the "Repos" tab of your account page. You can enable repos you want us to analyse here. After enabling a repo, you can visit it by clicking the "Show Analyses" button. At this point, you have the option to modify its settings, or just go ahead and press that "Analyse Now" button. You can select the branch you want to look at through the branch select drop-down on the left. For information about configuration, please check out the [configuration](configuration) section of our docs.
 
-Finally, you can view all the repos enabled on our system by clicking on our badge. That will take you to our homepage where you will find summaries of all your repos' status.
+Finally, you can view all the repos enabled on our system by clicking on our [badge](badges). This will take you to our homepage, where you'll find summaries of all your repos' statuses.
