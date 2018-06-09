@@ -2,34 +2,8 @@
 
 StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there.
 
-Configuration is formatted as a series of keys and their values, like the following:
-
-```yaml
-key1:
-  key2:
-    - value1
-    - value2
-  key3:
-    - value3
-key4:
-  - value4
-```
-
-As can be seen, `key4` has a single value (`value4`) and `key1` has two sub-keys (`key2` and `key3`), each of which have their own values (`value1`+`value2` and `value3`, respectively). A StyleCI configuration, written like above in either your `.styleci.yml` file or in the settings page, thus forms a tree of nested options.
-
-Note that the final bullet-point lists of values cannot themselves be nested. If there is only one element in them, you can omit the bullet like so:
-
-```yaml
-key1:
-  key2:
-    - value1
-    - value2
-  key3: value3
-key4: value4
-```
-
 > {info} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
-
+<!-- -->
 > {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
 
 <a name="choosing-languages"></a>
@@ -88,3 +62,32 @@ py: false
 ```
 
 You can read more about each option [here](multi-language). It simply disables all languages other than PHP, using its default settings above.
+
+<a name="configuration-format"></a>
+## Configuration Format
+
+Configuration is formatted as a series of keys and their values, like the following:
+
+```yaml
+key1:
+  key2:
+    - value1
+    - value2
+  key3:
+    - value3
+key4:
+  - value4
+```
+
+As can be seen, `key4` has a single value (`value4`) and `key1` has two sub-keys (`key2` and `key3`), each of which have their own values (`value1`+`value2` and `value3`, respectively). A StyleCI configuration, written like above in either your `.styleci.yml` file or in the settings page, thus forms a tree of nested options.
+
+Note that the final bullet-point lists of values cannot themselves be nested. If there is only one element in them, you can omit the bullet like so:
+
+```yaml
+key1:
+  key2:
+    - value1
+    - value2
+  key3: value3
+key4: value4
+```
