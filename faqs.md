@@ -5,6 +5,11 @@
 
 By default, StyleCI only requests public repo scopes from GitHub. If you are getting error 403 errors, or your team's private repos are not showing up, then it is likely that you need to enable private repo access on your account. This is free to do, and can be done from the home page, when logged in, or from the profile tab of the account page.
 
+<a name="vat-ids"></a>
+## What do I do with my business's VAT ID
+
+If you are using StyleCI on behalf of VAT registered business within the EU, please provide us with your VAT ID. This can be done via the account page.
+
 <a name="turn-off-notifications"></a>
 ## How do I turn off notification emails
 
