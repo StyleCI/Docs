@@ -3,7 +3,7 @@
     - [FAQ's](/faqs)
     - [Configuration](/configuration)
         - [PHP-Only Mode](/standalone-php)
-        - [All-Languages Mode](/all-languages)
+        - [Multi-Language Mode](/multi-language)
         - [Using Finder](/finder)
     - [PHP Fixers](/fixers)
     - [PHP Presets](/presets)

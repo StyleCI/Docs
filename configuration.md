@@ -51,10 +51,10 @@ Our PHP fixing works by applying [fixers](fixers) to files that fix specific thi
 
 If you happen to be using an open-source plan, you will have access to PHP-only features. These are detailed [here](standalone-php).
 
-<a name="all-languages-mode"></a>
-## All-Languages Mode
+<a name="multi-languages-mode"></a>
+## Multi-Language Mode
 
-If you have a paid plan, you'll have access to configuration features for every language StyleCI supports. Find out more about these options [here](all-languages).
+If you have a paid plan, you'll have access to configuration features for every language StyleCI supports. Find out more about these options [here](multi-language).
 
 <a name="default-configuration"></a>
 ## Default Configuration
@@ -62,21 +62,21 @@ If you have a paid plan, you'll have access to configuration features for every 
 Our default (PHP-only) configuration, used to define any keys you've omitted, is as follows:
 
 ```yaml
-  preset: recommended
-  risky: true
-  finder:
-    exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
-    name: "*.php"
-    not-name: "*.blade.php"
+preset: recommended
+risky: true
+finder:
+  exclude:
+    - modules
+    - node_modules
+    - storage
+    - vendor
+  name: "*.php"
+  not-name: "*.blade.php"
 ```
 
 You can read more about each option [here](standalone-php); in essence, the default mode uses recommended fixers and ignores paths and file suffixes that are usually undesirable to fix.
 
-This configuration, in all-languages mode, is equivalent to:
+This configuration, in multi-language mode, is equivalent to:
 
 ```yaml
 php: true
@@ -87,4 +87,4 @@ vue: false
 py: false
 ```
 
-You can read more about each option [here](all-languages). It simply disables all languages other than PHP, using its default settings above.
+You can read more about each option [here](multi-language). It simply disables all languages other than PHP, using its default settings above.

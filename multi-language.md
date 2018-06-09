@@ -1,8 +1,8 @@
-# All-Languages Mode
+# Multi-Language Mode
 
 For paid-plan users, our new configuration format provides top-level keys to specify separate options for each supported language. This allows you to fine-tune each language independently for a more comprehensive code fixing experience.
 
-Each language's configuration must now fall under said language's name. For instance, observe the example config file below:
+The configuration for each language must now fall under the relevant name. For instance, observe the example config file below:
 
 ```yaml
 php:
@@ -51,9 +51,30 @@ In the above example, it can be seen that custom PHP and Javascript configuratio
 
 > {info} If you removed the `ts` or `css` keys, the behavior would remain the same; removing any such language's key replaces it with its default behavior, ie. `true` for PHP and `false` for all others.
 
-You may notice that the PHP and Javascript configurations look different. In fact, every languge has its own separate configuration options, with PHP retaining the PHP-only ones.
+You may notice that the PHP and Javascript configurations look different. In fact, every language has its own separate configuration options, with PHP retaining the PHP-only ones.
 
 We describe each new language's options below. For all languages, the [finder](finder) key works the same.
+
+<a name="php-config"></a>
+## PHP Config
+
+Setting `php: true` translates to the following:
+
+```yaml
+php:
+  preset: recommended
+  risky: true
+  finder:
+    exclude:
+      - modules
+      - node_modules
+      - storage
+      - vendor
+    name: "*.php"
+    not-name: "*.blade.php"
+```
+
+PHP configuration is the same as before, other than that all PHP config options must fall under the `php` key as above. Read more about PHP configuration [here](standalone-php).
 
 <a name="javascript-config"></a>
 ## Javascript Config
