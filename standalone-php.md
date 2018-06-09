@@ -39,8 +39,7 @@ finder:
 
 > {note} This is a contrived example, and is not recommended for usage in any actual projects.
 
-Any key shown above that is not included will be replaced with its
-[default value](configuration/default-configuration).
+Any key shown above that is not included will be replaced with its [default value](configuration#default-configuration).
 
 <a name="presets"></a>
 ## Presets
