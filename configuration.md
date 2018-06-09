@@ -1,8 +1,11 @@
 # Configuration
 
-StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there. Configuration is formatted as a series of [keys and values](#configuration-format).
+StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there.
+
+Configuration is formatted as a series of [keys and values](#format-appendix).
 
 > {warn} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
+
 <!-- -->
 > {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
 
@@ -63,8 +66,8 @@ py: false
 
 You can read more about each option [here](multi-language). It simply disables all languages other than PHP, using its default settings above.
 
-<a name="configuration-format"></a>
-## Configuration Format
+<a name="format-appendix"></a>
+## Format Appendix
 
 Configuration is formatted as a series of keys and their values, like the following:
 
