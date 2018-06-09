@@ -1,8 +1,8 @@
 # Configuration
 
-StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there.
+StyleCI provides two ways to configure your repos. You can apply configuration either by committing a `.styleci.yml` file to the project's root, or by visiting its settings page on our site (accessible by the gear icon to the repo name's right on your homepage) and applying it there. Configuration is formatted as a series of [keys and values](#configuration-format).
 
-> {info} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
+> {warn} Setting configuration through the browser will override all config set in the `.styleci.yml` file.
 <!-- -->
 > {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
 
