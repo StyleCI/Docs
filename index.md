@@ -5,9 +5,9 @@
     
 - ## Configuration
     - [Getting Started](/configuration)
-    - [PHP-Only Mode](/standalone-php)
-    - [Multi-Language Mode](/multi-language)
     - [Using Finder](/finder)
+    - [Multi-Language Mode](/multi-language)
+    - [PHP-Only Mode](/standalone-php)
     - [PHP Fixers](/fixers)
     - [PHP Presets](/presets)
 
