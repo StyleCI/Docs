@@ -172,7 +172,7 @@ Notable changes for users are:
 
 ## 14/12/2016 - Slack Support
 
-StyleCI can now send Slack notifications for enabling & disabling of repos as well passing & failing analyses.
+StyleCI can now send Slack notifications for enabling & disabling of repos as well passing & failing analyzes.
 
 The associated blog post is available at https://blog.alt-three.com/styleci-slack/.
 
@@ -292,7 +292,7 @@ As well as fixing various bugs, today, we announce the availability of a new `up
 
 We're excited to announce an important change to the way we analyze PRs. Going forward, we now limit the files analyzed to those modified by the pull request you've made.
 
-In order to make a clear distinction between PR and push analyses, we are now using a different "status context", just like Travis CI does. This is perfect for if you are partially phasing in some coding standards changes, or are accepting PRs from forks that haven't been rebased in a while.
+In order to make a clear distinction between PR and push analyzes, we are now using a different "status context", just like Travis CI does. This is perfect for if you are partially phasing in some coding standards changes, or are accepting PRs from forks that haven't been rebased in a while.
 
 In addition to this, whenever we sent a new fix pull request to a branch, we will also close any existing fix PR open on that branch. This will prevent having a large amount of spam PRs on your repos.
 
