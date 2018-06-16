@@ -16,4 +16,4 @@ If you'd prefer to make sure everything's right before merge, or you prefer to c
 
 You can even use GitHub's [protected getting merged.
 
-> {info} We are currently migrating our documentation. You can find the original docs [here](https://styleci.readme.io/docs/automation).
+> {info} We are migrating our documentation. You can find the original docs [here](https://styleci.readme.io/docs/automation).
