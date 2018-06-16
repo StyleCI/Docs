@@ -339,7 +339,7 @@ You can read the full details on our blog: https://blog.alt-three.com/direct-fix
 
 The long awaited `no_useless_else` fixer is finally here, and will remove else blocks wherever they are redundant. In addition to this, the `dir_constant`, `modernize_types_casting`, and `random_api_migration` have been marked as risky.
 
-Some other changes are that the `no_duplicate_semicolons` fixer has be combined into the `no_empty_statement` fixer, and, for now, the `no_blank_lines_between_uses` fixer has been combined into the `no_extra_consecutive_blank_lines` fixer. 
+Some other changes are that the `no_duplicate_semicolons` fixer has be combined into the `no_empty_statement` fixer, and, for now, the `no_blank_lines_between_uses` fixer has been combined into the `no_extra_consecutive_blank_lines` fixer.
 
 We're also happy to announce that various bugs have been fixed too, including some problems with the braces fixer, and the self assessor fixer with anonymous classes.
 
