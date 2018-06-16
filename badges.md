@@ -1,6 +1,6 @@
 # Badges
 
-You can find copy and paste badge code on any analysis page for each repo. Click on the badge, and you'll be presented with the code. Alternatively, you can add `/shield` to the URL of the main page of your repo on StyleCI to get the badge URL.
+You can find copy and paste badge code on any analysis page for each repo. Click on the badge, and you'll be presented with the code. You can add `/shield` to the URL of the main page of your repo on StyleCI to get the badge URL.
 
 By default, we use the "flat-square" style, but you can also choose from "flat", or "plastic" by appending `?style=flat` to `?style=square` to the badge URL. We also support setting the branch you want by appending `?branch=your-branch` to the URL.
 
