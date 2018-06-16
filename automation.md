@@ -1,6 +1,6 @@
 # Automation
 
-StyleCI provides deep integration with GitHub's status API, meaning that we can provide reports on pull requests. You have 2 awesome options to choose from.
+StyleCI provides deep integration with GitHub's status API allowing StyleCI to provide reports on pull requests. You have 2 awesome options to choose from.
 
 <a name="1-let-us-do-everything-for-you"></a>
 ## 1. Let us do everything for you
