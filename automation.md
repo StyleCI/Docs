@@ -16,4 +16,4 @@ If you'd prefer to make sure everything's just right before merge, or you prefer
 
 You can even use GitHub's [protected branches](https://help.github.com/articles/about-protected-branches/) feature to prevent bad changes getting merged.
 
-> {info} We're in the process of migrating our documenation. You can find the original docs [here](https://styleci.readme.io/docs/automation).
+> {info} We're in the process of migrating our documentation. You can find the original docs [here](https://styleci.readme.io/docs/automation).
