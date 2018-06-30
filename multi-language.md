@@ -244,7 +244,7 @@ py:
     * The `join-short-lines` key specifies whether to join several short lines into one, eg. making a small 'if' statement a one-liner. Valid values are `false` or `true`.
     * The `comment-indent` specifies indentation required after a line for a trailing comment. Valid values are integers between `2` and `8`.
 
-Note that for Python, we allow a preset along with a set of extra options for fine-tuning. The presets will have the side effect of changing the defaults for `options` as well, which are overriden by setting these keys explicitly:
+Note that for Python, we allow a preset along with a set of extra options for fine-tuning their behavior. The presets will have the side effect of changing the defaults for `options`, which are overriden by setting these keys explicitly:
 
 * `pep8` will set `use-tabs` to `false`, `print-width` to `79`, `tab-width` to `4`, `multiline-split-indent` to `4`, `join-short-lines` to `true` and `comment-indent` to 2.
 * `google`, `facebook` and `chromium` will all do the same, albeit setting `column-width` to `80`.
