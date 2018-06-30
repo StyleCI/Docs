@@ -217,13 +217,14 @@ Setting `py: true` translates to the following:
 ```yaml
 py:
   version: 3
-  style: pep8
-  use-tabs: false
-  print-width: 120
-  tab-width: 4
-  multiline-split-indent: 4
-  join-short-lines: false
-  comment-indent: 4
+  preset: pep8
+  options:
+    use-tabs: false
+    print-width: 120
+    tab-width: 4
+    multiline-split-indent: 4
+    join-short-lines: false
+    comment-indent: 4
   finder:
     exclude:
       - modules
@@ -234,11 +235,18 @@ py:
 ```
 
 * The `version` key specifies the Python grammar version to use. `2` and `3` are allowed values, `3` being the default.
-* Valid values for the `style` key are `pep8`, `google`, `chromium` or `facebook`. We'd recommend either `pep8` or `google`.
-* Valid values for `use-tabs` are `false` and `true`.
-* Valid values for `print-width` are integers between `20` and `200`.
-  We'd recommend `80`, `100`, or `120`.
-* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend `4`.
-* The `multiline-split-indent` key specifies the extra indentation used when a line is split across several lines. Valid values are integers between `2` and `8`. We'd recommend `4`.
-* The `join-short-lines` key specifies whether to join several short lines into one, eg. making a small 'if' statement a one-liner. Valid values are `false` or `true`.
-* The `comment-indent` specifies indentation required after a line for a trailing comment. Valid values are integers between `2` and `8`.
+* Valid values for the `preset` key are `pep8`, `google`, `chromium` or `facebook`. We'd recommend either `pep8` or `google`.
+* The `options` key contains several suboptions for further, fine-tuned customizations. These options are as follows:
+    * Valid values for `use-tabs` are `false` and `true`.
+    * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
+    * Valid values for `tab-width` are integers between `2` and `8`. We'd recommend `4`.
+    * The `multiline-split-indent` key specifies the extra indentation used when a line is split across several lines. Valid values are integers between `2` and `8`. We'd recommend `4`.
+    * The `join-short-lines` key specifies whether to join several short lines into one, eg. making a small 'if' statement a one-liner. Valid values are `false` or `true`.
+    * The `comment-indent` specifies indentation required after a line for a trailing comment. Valid values are integers between `2` and `8`.
+
+Note that for Python, we allow a preset along with a set of extra options for fine-tuning. The presets will have the side effect of changing the defaults for `options` as well, which are overriden by setting these keys explicitly:
+
+* `pep8` will set `use-tabs` to `false`, `print-width` to `79`, `tab-width` to `4`, `multiline-split-indent` to `4`, `join-short-lines` to `true` and `comment-indent` to 2.
+* `google`, `facebook` and `chromium` will all do the same, albeit setting `column-width` to `80`.
+
+> {info} It's important to remember the preset does a lot more than just choose defaults for the `options` key - the internal differences in behavior will be noticeable and substantial, albeit not directly configurable. Hence, for example, choosing the `google` preset will add several subtle fixes configured to coding to this standard that would not be available otherwise.
