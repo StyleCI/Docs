@@ -12,8 +12,8 @@ Manual triggering of automatic fix PRs can be done from the analysis page, and a
 <a name="2-youd-like-more-control"></a>
 ## 2. You'd like more control
 
-If you'd prefer to make sure everything's right before merge, or you prefer to commit your own fixes, that's super easy too. On every analysis page, we provide a diff download link where you can download a diff that can be applied using git apply. This can be useful if you'd like the contributor to fix the CS issues, or useful if you'd like to merge their PR using Gush, and fix the issues as you merge. Powerful!
+If you'd prefer to make sure everything's right before merge, or you prefer to commit your own fixes, that's super easy too. On every analysis page, we provide a diff download link where you can download a diff that can be applied using `git apply`. This can be useful if you'd like the contributor to fix the CS issues, or useful if you'd like to merge their PR using Gush, and fix the issues as you merge. Powerful!
 
-You can even use GitHub's [protected getting merged.
+You can even use GitHub's [protected branches](https://help.github.com/articles/about-protected-branches) feature to prevent bad changes getting merged.
 
 > {info} We are migrating our documentation. You can find the original docs [here](https://styleci.readme.io/docs/automation).
