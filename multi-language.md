@@ -189,6 +189,7 @@ vue:
   semicolons: true
   arrow-parens: avoid
   bracket-spacing: true
+  indent-script-and-style: false
   finder:
     exclude:
       - modules
@@ -206,6 +207,7 @@ vue:
 * Valid values for `semicolons` are `false` and `true`.
 * Valid values for `arrow-parens` are `avoid` and `always`.
 * Valid values for `bracket-spacing` are `false` and `true`.
+* Valid values for `indent-script-and-style` are `false` and `true`.
 
 <a name="python-config"></a>
 ## Python Config
