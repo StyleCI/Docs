@@ -175,7 +175,7 @@ css:
 * Valid values for `double-quotes` are `false` and `true`.
 
 <a name="vue-config"></a>
-## Vue Config
+## Vue.js Config
 
 Setting `vue: true` translates to the following:
 
