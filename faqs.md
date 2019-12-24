@@ -22,9 +22,11 @@ If you're not receiving any of our notification emails, it could be down to one 
 
 ### Whitelist us
 
-A good starting point is to ensure that the email address we use to send emails to you isn't blacklisted or marked as spam by your email provider.
+A good starting point is to ensure that the email address we use to send emails to you isn't blacklisted or marked as spam by your email provider. We may send mail from the following email addesses:
 
-Email notifications are sent from us at notify@styleci.io, and support emails from support@alt-three.com.
+* Customer service and support emails are sent from support@styleci.io;
+* Transactional and notification emails are sent from notify@styleci.io;
+* Emails from our payment provider, Stripe, are sent from billing@styleci.io, card-expiring@styleci.io, and failed-payment@styleci.io.
 
 ### Check your GitHub email
 
