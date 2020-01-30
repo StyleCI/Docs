@@ -5,14 +5,14 @@ Our PHP fixing works by applying single-purposed transformations to files that f
 Depending upon the [preset](presets), a default set of fixers will be included.
 If you want more granular control, you can enable or disable specific fixers by adding them to your configuration:
 
-```diff
+```yaml
 preset: recommended
 enabled:
   - no_superfluous_phpdoc_tags
-+ - declare_strict_types
+  - declare_strict_types
 disabled:
   - align_double_arrow
-- - include
+  - include
 ```
 
 > {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
