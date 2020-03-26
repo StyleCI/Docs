@@ -1,6 +1,21 @@
 # PHP Fixers
 
-We have many available fixers. Note that while header comment fixing is available in StyleCI, we do not consider it a "fixer" as isn't configured as a fixer. Header comment fixing has it's own dedicated config on the settings page for your repo.
+Our PHP fixing works by applying single-purposed transformations to files that fix specific issues.
+
+Depending upon the [preset](presets), a default set of fixers will be included.
+If you want more granular control, you can enable or disable specific fixers by adding them to your configuration:
+
+```yaml
+preset: recommended
+enabled:
+  - no_superfluous_phpdoc_tags
+  - declare_strict_types
+disabled:
+  - align_double_arrow
+  - include
+```
+
+> {danger} If you want to use our PHP header checking facility, you must configure that part on the settings page; it's the only part of the configuration not available through the `.styleci.yml` file.
 
 __STYLECI_FIXER_DOCS__
 
