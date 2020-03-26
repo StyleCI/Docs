@@ -27,7 +27,7 @@ js:
   double-quotes: false
   trailing-commas: es5
   semicolons: true
-  arrow-parens: avoid
+  arrow-parens: always
   bracket-spacing: true
   finder:
     exclude:
@@ -89,7 +89,7 @@ js:
   double-quotes: false
   trailing-commas: es5
   semicolons: true
-  arrow-parens: avoid
+  arrow-parens: always
   bracket-spacing: true
   finder:
     exclude:
@@ -126,7 +126,7 @@ ts:
   double-quotes: false
   trailing-commas: es5
   semicolons: true
-  arrow-parens: avoid
+  arrow-parens: always
   bracket-spacing: true
   finder:
     exclude:
@@ -187,7 +187,7 @@ vue:
   double-quotes: false
   trailing-commas: es5
   semicolons: true
-  arrow-parens: avoid
+  arrow-parens: always
   bracket-spacing: true
   indent-script-and-style: false
   finder:
