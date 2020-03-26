@@ -5,6 +5,16 @@
 
 By default, StyleCI only requests public repo scopes from GitHub. If you are getting error 403 errors, or your team's private repos are not showing up, then it is likely that you need to enable private repo access. This is free to do, and can be done from the home page, when logged in, or from the [profile page](https://github.styleci.io/profile).
 
+<a name="enable-full-automation"></a>
+## How do I enable all StyleCI's automation
+
+By default, StyleCI will not automatically apply its fixes to your codebase unprompted. This is to allow you to initially review StyleCI's fixes, and possibly tweak the configuration. Once you are happy with the settings, you can choose from one of our automation modes witihn the settings page for the repo on StyleCI.
+
+<a name="apply-fixes-locally"></a>
+## How do I apply StyleCI's changes locally
+
+StyleCI is designed so that you don't need to worry about doing this - we can automatically apply our fixes right after you push. However, for those who really want it, we have a CLI tool that can be used to apply our fixes to your code before you push. All we require is that you have PHP 7.2 or higher installed on your machine, and we can fix all your PHP, JS, CSS, Vue.js, and Python code, right then and there! Our CLI tool is available at [https://github.com/StyleCI/CLI](https://github.com/StyleCI/CLI).
+
 <a name="vat-ids"></a>
 ## What do I do with my business's VAT ID
 
