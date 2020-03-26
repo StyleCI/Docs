@@ -1,8 +1,8 @@
 # StyleCI Docs
 
-Welcome to StyleCI - The Web Coding Style Service!
+StyleCI is a continuous integration service which **automatically enforces** your code style preferences. Never again waste your developers' time on maintaining and configuring custom code style fixing tools and CI services, or their time reviewing code style within pull requests. Simply enable StyleCI, apply our fixes, then enable our full automation mode!
 
-StyleCI provides checks for both your open and closed source repos. By analyzing every push or pull request made on your codebase, StyleCI ensures that your code is always written against the standards you want it to be.
+We support both your open and closed source repos from **GitHub**, **GitLab** or **Bitbucket**. By analyzing every push or pull request made on your codebase, StyleCI ensures that your code is always written against the standards you want it to be. StyleCI supports **PHP**, **JS**, **CSS**, **Vue.js**, **Python** and more. For **Laravel** users, StyleCI is used by the framework to enforce its own code style guidelines automatically, and Laravel applications additionally ship with a `.styleci.yml` config file to help you get started.
 
 <a name="getting-started"></a>
 ## Getting Started
