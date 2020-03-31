@@ -64,6 +64,8 @@ Setting `php: true` translates to the following:
 php:
   preset: recommended
   risky: true
+  tab-width: 4
+  use-tabs: false
   finder:
     exclude:
       - modules
@@ -104,7 +106,7 @@ js:
       - "*.min.js"
 ```
 
-* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `tab-width` are `2` and `4`.
 * Valid values for `use-tabs` are `false` and `true`.
 * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
 * Valid values for `double-quotes` are `false` and `true`.
@@ -137,7 +139,7 @@ ts:
     name: "*.ts"
 ```
 
-* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `tab-width` are `2` and `4`.
 * Valid values for `use-tabs` are `false` and `true`.
 * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
 * Valid values for `double-quotes` are `false` and `true`.
@@ -169,7 +171,7 @@ css:
       - "*.less"
 ```
 
-* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `tab-width` are `2` and `4`.
 * Valid values for `use-tabs` are `false` and `true`.
 * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
 * Valid values for `double-quotes` are `false` and `true`.
@@ -199,7 +201,7 @@ vue:
     name: "*.vue"
 ```
 
-* Valid values for `tab-width` are integers between `2` and `8`. We'd recommend either `2` or `4`.
+* Valid values for `tab-width` are `2` and `4`.
 * Valid values for `use-tabs` are `false` and `true`.
 * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
 * Valid values for `double-quotes` are `false` and `true`.
@@ -221,9 +223,9 @@ py:
   version: 3
   preset: pep8
   options:
+    tab-width: 4
     use-tabs: false
     print-width: 120
-    tab-width: 4
     multiline-split-indent: 4
     join-short-lines: false
     comment-indent: 4
@@ -239,9 +241,9 @@ py:
 * The `version` key specifies the Python grammar version to use. `2` and `3` are allowed values, `3` being the default.
 * Valid values for the `preset` key are `pep8`, `google`, `chromium` or `facebook`. We'd recommend either `pep8` or `google`.
 * The `options` key contains several suboptions for further, fine-tuned customizations. These options are as follows:
+    * Valid values for `tab-width` are `2` and `4`.
     * Valid values for `use-tabs` are `false` and `true`.
     * Valid values for `print-width` are integers between `20` and `200`. We'd recommend `80`, `100`, or `120`.
-    * Valid values for `tab-width` are integers between `2` and `8`. We'd recommend `4`.
     * The `multiline-split-indent` key specifies the extra indentation used when a line is split across several lines. Valid values are integers between `2` and `8`. We'd recommend `4`.
     * The `join-short-lines` key specifies whether to join several short lines into one, eg. making a small 'if' statement a one-liner. Valid values are `false` or `true`.
     * The `comment-indent` specifies indentation required after a line for a trailing comment. Valid values are integers between `2` and `8`.

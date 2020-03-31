@@ -9,6 +9,10 @@ preset: recommended
 
 risky: false
 
+tab-width: 4
+
+use-tabs: false
+
 enabled:
   - long_array_syntax
   - strict
@@ -51,9 +55,12 @@ Check out the [Presets](presets) page for more details.
 <a name="risky"></a>
 ## Risky
 
-Some of our fixers do things that can change code behavior in weird cases. It's generally not an issue, but if you're concerned about an odd piece of code you've written clashing with these fixes, you can disable them by setting `risky` to false. It'll be set to true by default.
+Some of our fixers do things that can change code behavior, by design. You can disable them by setting `risky` to false. It'll be set to true by default. If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers), denoted by a warning of changing code behavior below their name.
 
-If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers), denoted by a warning of changing code behavior below their name.
+<a name="indentation"></a>
+## Indentation
+
+It is possible to configure the desired indentation style by setting the `tab-width` value to either `2` or `4` (defaults to `4`) and the `use-tabs` value to either `true` or `false` (defaults to `false`). If you have enabled the `indentation` fixer, then all your indentation will be updated to match this style (this fixer is enabled by default). If you do not enable this fixer, these config options will only affect generated or directly fixed code.
 
 <a name="enabled-disabled"></a>
 ## Enabled/Disabled
