@@ -41,7 +41,7 @@ finder:
     - "< 3"
 ```
 
-> {note} This is a contrived example, and is not recommended for usage in any actual projects.
+> {danger} DO NOT COPY THIS CONFIG FILE TO YOUR PROJECT AS IS! It only exists to show off all the configuration options we have.
 
 Any key shown above that is not included will be replaced with its [default value](configuration#default-configuration).
 
