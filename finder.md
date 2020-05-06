@@ -12,7 +12,7 @@ risky: false
 finder:
   exclude:
     - "tests"
-    - docs
+    - "docs"
     - "log"
   name: "*.php"
   not-name:

@@ -46,12 +46,14 @@ preset: recommended
 risky: true
 finder:
   exclude:
-    - modules
-    - node_modules
-    - storage
-    - vendor
+    - "modules"
+    - "node_modules"
+    - "storage"
+    - "vendor"
   name: "*.php"
-  not-name: "*.blade.php"
+  not-name:
+    - "*.blade.php"
+    - "_ide_helper.php"
 ```
 
 You only need to define the configuration options you want to override, any other options are merged with the default.

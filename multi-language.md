@@ -14,12 +14,14 @@ php:
     - align_double_arrow
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name: "*.php"
-    not-name: "*.blade.php"
+    not-name:
+      - "*.blade.php"
+      - "_ide_helper.php"
 js:
   tab-width: 4
   use-tabs: false
@@ -31,10 +33,10 @@ js:
   bracket-spacing: true
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name:
       - "*.js"
       - "*.jsx"
@@ -68,12 +70,14 @@ php:
   use-tabs: false
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name: "*.php"
-    not-name: "*.blade.php"
+    not-name:
+      - "*.blade.php"
+      - "_ide_helper.php"
 ```
 
 PHP configuration is the same as before, other than that all PHP config options must fall under the `php` key as above. Read more about PHP configuration [here](standalone-php).
@@ -95,10 +99,10 @@ js:
   bracket-spacing: true
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name:
       - "*.js"
       - "*.jsx"
@@ -132,10 +136,10 @@ ts:
   bracket-spacing: true
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name: "*.ts"
 ```
 
@@ -161,10 +165,10 @@ css:
   double-quotes: false
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name:
       - "*.css"
       - "*.scss"
@@ -194,10 +198,10 @@ vue:
   indent-script-and-style: false
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name: "*.vue"
 ```
 
@@ -231,10 +235,10 @@ py:
     comment-indent: 4
   finder:
     exclude:
-      - modules
-      - node_modules
-      - storage
-      - vendor
+      - "modules"
+      - "node_modules"
+      - "storage"
+      - "vendor"
     name: "*.py"
 ```
 
