@@ -18,8 +18,8 @@ __Plastic__
 
 ![StyleCI](https://github.styleci.io/repos/7548986/shield?style=plastic)
 
-__Flat for Branch 5.1__
+__Flat for Branch 6.x__
 
-`https://github.styleci.io/repos/7548986/shield?style=plastic&branch=5.1`
+`https://github.styleci.io/repos/7548986/shield?style=flat&branch=6.x`
 
-![StyleCI](https://github.styleci.io/repos/7548986/shield?style=flat&branch=5.1)
+![StyleCI](https://github.styleci.io/repos/7548986/shield?style=flat&branch=6.x)
