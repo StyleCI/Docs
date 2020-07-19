@@ -5,24 +5,11 @@
     "license": "CC-BY-SA-4.0",
     "authors": [
         {
-            "name": "James Brooks",
-            "email": "james@alt-three.com"
-        },
-        {
-            "name": "Graham Campbell",
-            "email": "graham@alt-three.com"
-        },
-        {
-            "name": "Joseph Cohen",
-            "email": "joe@alt-three.com"
+            "name": "StyleCI",
+            "email": "support@styleci.io"
         }
     ],
     "config": {
         "preferred-install": "dist"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.1-dev"
-        }
     }
 }
