@@ -47,17 +47,22 @@ finder:
 
 Any key shown above that is not included will be replaced with its [default value](configuration#default-configuration).
 
+<a name="risky"></a>
+## Risky
+
+Some of our fixers do things that can change code behavior, by design. Risky mode is disabled by default, but you can enable the use of such fixers by `risky` to true. All of our safe and risky fixers are documented [here](fixers).
+
+<a name="version"></a>
+## Version
+
+It is possible to set the PHP version your code will be parsed using using the `version` option. Currently, the only choice and default value is `7`, which will process your code as PHP 7.4 syntax, but soon the option `8` will become available, which will process your code as PHP 8.0 syntax.
+
 <a name="presets"></a>
 ## Presets
 
 We provide a few premade configurations that tend to be useful. After choosing a preset with the `preset` key as above, you can add extra config that will override settings your preset contains. The `recommended` preset is enabled by default.
 
 Check out the [Presets](presets) page for more details.
-
-<a name="risky"></a>
-## Risky
-
-Some of our fixers do things that can change code behavior, by design. You can disable them by setting `risky` to false. It'll be set to true by default. If you're not sure whether something will break, feel free to check out all our risky PHP fixers [here](fixers), denoted by a warning of changing code behavior below their name.
 
 <a name="indentation"></a>
 ## Indentation
