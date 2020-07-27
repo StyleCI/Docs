@@ -22,3 +22,9 @@
     - [Automation](/automation)
     - [Badges](/badges)
     - [Slack](/slack)
+
+- ## CLI Tool
+    - [Introduction](/cli-tool)
+    - [Installation](/cli-tool#installation)
+    - [Configuration](/cli-tool#configuration)
+    - [Usage/Examples](/cli-tool#usage)
