@@ -5,7 +5,7 @@ The StyleCI CLI Tool requires [PHP](https://php.net) 7.2.5 or higher, and can be
 <a name="installation"></a>
 ## Installation
 
-### Require using Composer
+#### Require using Composer
 
 Local installation:
 
@@ -19,7 +19,7 @@ Global installation:
 $ composer global require styleci/cli:^0.6.1
 ```
 
-### Download the Phar
+#### Download the Phar
 
 Global installation:
 
@@ -32,7 +32,7 @@ $ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v0.6.
 
 When using the tool for the first time, you may want to enter your StyleCI API keys. You can do this with the `styleci config` command, which will store your keys in `~/.styleci/config.json`, just like how Composer store keys.
 
-#### StyleCI for GitHub:
+**StyleCI for GitHub:**
 
 ```
 styleci config auth.github YOUR-API-KEY-GOES-HERE
@@ -40,7 +40,7 @@ styleci config auth.github YOUR-API-KEY-GOES-HERE
 
 > Your API key is available at https://github.styleci.io/profile.
 
-#### StyleCI for GitLab:
+**StyleCI for GitLab:**
 
 ```
 styleci config auth.gitlab YOUR-API-KEY-GOES-HERE
@@ -48,7 +48,7 @@ styleci config auth.gitlab YOUR-API-KEY-GOES-HERE
 
 > Your API key is available at https://gitlab.styleci.io/profile.
 
-#### StyleCI for Bitbucket:
+**StyleCI for Bitbucket:**
 
 ```
 styleci config auth.bitbucket YOUR-API-KEY-GOES-HERE
@@ -68,30 +68,30 @@ $ styleci
 and StyleCI will analyze your current directory.
 
 <a name="configuration"></a>
-### Environment Variables
+## Environment Variables
 
 If you have chosen not use the first time setup config, or would like to temporarily override the stored keys, this can be done by setting environment variables.
 
-#### StyleCI for GitHub:
+**StyleCI for GitHub:**
 
 ```bash
 $ STYLECI_GITHUB_API_KEY=YOUR-API-KEY-GOES-HERE styleci
 ```
 
-#### StyleCI for GitLab:
+**StyleCI for GitLab:**
 
 ```bash
 $ STYLECI_GITLAB_API_KEY=YOUR-API-KEY-GOES-HERE styleci
 ```
 
-#### StyleCI for Bitbucket:
+**StyleCI for Bitbucket:**
 
 ```bash
 $ STYLECI_BITBUCKET_API_KEY=YOUR-API-KEY-GOES-HERE styleci
 ```
 
 <a name="usage"></a>
-### Advanced Usage
+## Advanced Usage
 
 You can optionally pass a directory to analyze, otherwise, the current working directory will be used. Moreover, we support analyzing only the changed files, performing a "dry run" without touching your files, and more:
 
