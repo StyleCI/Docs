@@ -42,8 +42,9 @@ If you have a paid plan, you'll have access to configuration features for every 
 Our default (PHP-only) configuration looks like this:
 
 ```yaml
-preset: recommended
 risky: false
+version: 7
+preset: recommended
 finder:
   exclude:
     - "modules"

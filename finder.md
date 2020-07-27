@@ -5,9 +5,11 @@ The Finder configuration feature lets you nitpick exactly which files will and w
 Take a look at the below example of a PHP-only configuration:
 
 ```yaml
-presets: recommended
+risky: false
 
-risky: true
+version: 7
+
+presets: recommended
 
 finder:
   exclude:

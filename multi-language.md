@@ -6,12 +6,13 @@ The configuration for each language must now fall under the relevant name. For i
 
 ```yaml
 php:
-  preset: laravel
   risky: true
+  version: 7
+  preset: laravel
   enabled:
-    - long_array_syntax
+    - ternary_to_elvis_operator
   disabled:
-    - align_double_arrow
+    - single_import_per_statement
   finder:
     exclude:
       - "modules"
@@ -64,8 +65,9 @@ Setting `php: true` translates to the following:
 
 ```yaml
 php:
+  risky: false
+  version: 7
   preset: recommended
-  risky: true
   tab-width: 4
   use-tabs: false
   finder:

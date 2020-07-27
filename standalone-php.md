@@ -5,9 +5,11 @@ In the absence of a paid plan, StyleCI will expect your configuration to be form
 To demonstrate this, below is the contents of an example `.styleci.yml` file, using all PHP-only config features available:
 
 ```yaml
-preset: recommended
-
 risky: false
+
+version: 7
+
+preset: recommended
 
 tab-width: 4
 
