@@ -7,7 +7,7 @@ Take a look at the below example of a PHP-only configuration:
 ```yaml
 presets: recommended
 
-risky: false
+risky: true
 
 finder:
   exclude:
