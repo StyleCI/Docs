@@ -55,7 +55,7 @@ Some of our fixers do things that can change code behavior, by design. Risky mod
 <a name="version"></a>
 ## Version
 
-It is possible to set the PHP version your code will be parsed using using the `version` option. Currently, the only choice and default value is `7`, which will process your code as PHP 7.4 syntax, but soon the option `8` will become available, which will process your code as PHP 8.0 syntax.
+It is possible to set the PHP version your code will be parsed using using the `version` option. `7` and `8` are allowed values, `7` being the default. Choosing `7` will parse your code as PHP 7.4 syntax, and choosing `8` parse your code as PHP 8.0 syntax. PHP 8 support is currently in beta, so use with care!
 
 <a name="presets"></a>
 ## Presets
