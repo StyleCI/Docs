@@ -24,7 +24,7 @@ $ composer global require styleci/cli:^0.9
 Global installation:
 
 ```bash
-$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v0.9.2/styleci.phar \
+$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v0.9.3/styleci.phar \
     && chmod +x styleci.phar && sudo mv styleci.phar /usr/local/bin/styleci
 ```
 
