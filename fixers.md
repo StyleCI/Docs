@@ -21,4 +21,4 @@ __STYLECI_FIXER_DOCS__
 
 ---
 
-Please note that much of the content on this page is Copyright (c) 2012-2018 Fabien Potencier and Dariusz Rumiński, licensed under [The MIT License](https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/LICENSE).
+Please note that much of the content on this page is Copyright (c) 2012-2021 Fabien Potencier and Dariusz Rumiński, licensed under [The MIT License](https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/LICENSE).
