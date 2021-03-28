@@ -1,7 +1,7 @@
 {
     "name": "styleci/docs",
     "description": "The StyleCI Docs",
-    "keywords": ["docs", "alt-three", "styleci", "Docs", "Alt Three", "StyleCI"],
+    "keywords": ["docs", "styleci", "Docs", "StyleCI"],
     "license": "CC-BY-SA-4.0",
     "authors": [
         {
