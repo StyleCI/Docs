@@ -198,6 +198,7 @@ vue:
   arrow-parens: always
   bracket-spacing: true
   indent-script-and-style: false
+  whitespace-sensitivity: css
   finder:
     exclude:
       - "modules"
@@ -216,6 +217,7 @@ vue:
 * Valid values for `arrow-parens` are `avoid` and `always`.
 * Valid values for `bracket-spacing` are `false` and `true`.
 * Valid values for `indent-script-and-style` are `false` and `true`.
+* Valid values for `whitespace-sensitivity` are `css`, `strict` and `ignore`.
 
 <a name="python-config"></a>
 ## Python Config
