@@ -43,7 +43,7 @@ Our default (PHP-only) configuration looks like this:
 
 ```yaml
 risky: false
-version: 7
+version: 7.4
 preset: recommended
 finder:
   exclude:

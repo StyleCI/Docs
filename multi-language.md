@@ -7,7 +7,7 @@ The configuration for each language must now fall under the relevant name. For i
 ```yaml
 php:
   risky: true
-  version: 7
+  version: 7.4
   preset: laravel
   enabled:
     - ternary_to_elvis_operator
@@ -66,7 +66,7 @@ Setting `php: true` translates to the following:
 ```yaml
 php:
   risky: false
-  version: 7
+  version: 7.4
   preset: recommended
   tab-width: 4
   use-tabs: false
@@ -228,7 +228,7 @@ Setting `py: true` translates to the following:
 
 ```yaml
 py:
-  version: 3
+  version: 3.9
   preset: pep8
   options:
     tab-width: 4
@@ -246,7 +246,7 @@ py:
     name: "*.py"
 ```
 
-* The `version` key specifies the Python grammar version to use. `2` and `3` are allowed values, `3` being the default.
+* The `version` key specifies the Python grammar version to use. `2.7` and `3.9` are allowed values, `3.9` being the default, and additionally, `2` is an alias for `2.7` and `3` is an alias for `3.9`.
 * Valid values for the `preset` key are `pep8`, `google`, `chromium` or `facebook`. We'd recommend either `pep8` or `google`.
 * The `options` key contains several suboptions for further, fine-tuned customizations. These options are as follows:
     * Valid values for `tab-width` are `2` and `4`.

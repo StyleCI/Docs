@@ -7,7 +7,7 @@ To demonstrate this, below is the contents of an example `.styleci.yml` file, us
 ```yaml
 risky: false
 
-version: 7
+version: 7.4
 
 preset: recommended
 
@@ -55,7 +55,7 @@ Some of our fixers do things that can change code behavior, by design. Risky mod
 <a name="version"></a>
 ## Version
 
-It is possible to set the PHP version your code will be parsed using using the `version` option. `7` and `8` are allowed values, `7` being the default. Choosing `7` will parse your code as PHP 7.4 syntax, and choosing `8` parse your code as PHP 8.0 syntax. PHP 8 support is currently in beta, so use with care!
+It is possible to set the PHP version your code will be parsed using using the `version` option. `7.4`, `8.0`, and `8.1` are the allowed values, and additionally, `7` is an alias for `7.4` and `8` is an alias for `8.0`. PHP version 7.4 support is stable and is the default version. 8.0 support is currently in beta and 8.1 support is in alpha, so use with care!
 
 <a name="presets"></a>
 ## Presets
