@@ -17,7 +17,9 @@ php:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name: "*.php"
     not-name:
@@ -36,7 +38,9 @@ js:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name:
       - "*.js"
@@ -74,7 +78,9 @@ php:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name: "*.php"
     not-name:
@@ -103,7 +109,9 @@ js:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name:
       - "*.js"
@@ -140,7 +148,9 @@ ts:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name: "*.ts"
 ```
@@ -169,7 +179,9 @@ css:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name:
       - "*.css"
@@ -203,7 +215,9 @@ vue:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name: "*.vue"
 ```
@@ -241,7 +255,9 @@ py:
     exclude:
       - "modules"
       - "node_modules"
+      - "nova"
       - "storage"
+      - "spark"
       - "vendor"
     name: "*.py"
 ```

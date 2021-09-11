@@ -49,7 +49,9 @@ finder:
   exclude:
     - "modules"
     - "node_modules"
+    - "nova"
     - "storage"
+    - "spark"
     - "vendor"
   name: "*.php"
   not-name:
