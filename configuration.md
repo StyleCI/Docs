@@ -50,6 +50,7 @@ finder:
     - "modules"
     - "node_modules"
     - "nova"
+    - "nova-components"
     - "storage"
     - "spark"
     - "vendor"
