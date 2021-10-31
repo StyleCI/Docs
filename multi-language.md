@@ -7,7 +7,7 @@ The configuration for each language must now fall under the relevant name. For i
 ```yaml
 php:
   risky: true
-  version: 7.4
+  version: 8.0
   preset: laravel
   enabled:
     - ternary_to_elvis_operator
@@ -72,7 +72,7 @@ Setting `php: true` translates to the following:
 ```yaml
 php:
   risky: false
-  version: 7.4
+  version: 8.0
   preset: recommended
   tab-width: 4
   use-tabs: false

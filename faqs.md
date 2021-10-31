@@ -15,11 +15,6 @@ By default, StyleCI will not automatically apply its fixes to your codebase unpr
 
 StyleCI is designed so that you don't need to worry about doing this - we can automatically apply our fixes right after you push. However, for those who really want it, we have a CLI tool that can be used to apply our fixes to your code before you push. All we require is that you have PHP 7.2 or higher installed on your machine, and we can fix all your PHP, JS, CSS, Vue.js, and Python code, right then and there! Our CLI tool is available at [https://github.com/StyleCI/CLI](https://github.com/StyleCI/CLI).
 
-<a name="vat-ids"></a>
-## What do I do with my business's VAT ID
-
-If you are using StyleCI on behalf of VAT registered business within the EU, Switzerland or Norway, please provide us with your VAT ID. This can be done via the StyleCI account page(s).
-
 <a name="turn-off-notifications"></a>
 ## How do I turn off notification emails
 
@@ -36,7 +31,8 @@ A good starting point is to ensure that the email address we use to send emails 
 
 * Customer service and support emails are sent from support@styleci.io;
 * Transactional and notification emails are sent from notify@styleci.io;
-* Emails from our payment provider, Stripe, are sent from billing@styleci.io, card-expiring@styleci.io, and failed-payment@styleci.io.
+
+Our order process is conducted by our online reseller & Merchant of Record, Paddle.com, who also handle order related inquiries and returns. They may send emails from @paddle.com and @paddle.net email addresses.
 
 ### Check your email address
 
@@ -45,4 +41,4 @@ We send emails to email address that you set as your primary email on GitHub, Gi
 <a name="keep-a-change-log"></a>
 ## Do you keep a change log?
 
-Yes, we document all major changes we make on our [blog](https://blog.styleci.io/). A recent important change is that since 23rd December 2019, we parse files as PHP 7.4, rather than 7.3 (previously 7.1 until June 2019). Our blog post about that change is available [here](https://blog.styleci.io/php-7-4-support/) (respectively [here](https://blog.styleci.io/php-7-3-support/)).
+Yes, we document all major changes we make on our [blog](https://blog.styleci.io/).
