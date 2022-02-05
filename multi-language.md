@@ -34,6 +34,7 @@ js:
   trailing-commas: es5
   semicolons: true
   arrow-parens: always
+  bracket-same-line: false
   bracket-spacing: true
   finder:
     exclude:
@@ -107,6 +108,7 @@ js:
   trailing-commas: es5
   semicolons: true
   arrow-parens: always
+  bracket-same-line: false
   bracket-spacing: true
   finder:
     exclude:
@@ -131,6 +133,7 @@ js:
 * Valid values for `trailing-commas` are `none`, `es5`, or `all`.
 * Valid values for `semicolons` are `false` and `true`.
 * Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-same-line` are `false` and `true`.
 * Valid values for `bracket-spacing` are `false` and `true`.
 
 <a name="typescript-config"></a>
@@ -147,6 +150,7 @@ ts:
   trailing-commas: es5
   semicolons: true
   arrow-parens: always
+  bracket-same-line: false
   bracket-spacing: true
   finder:
     exclude:
@@ -167,6 +171,7 @@ ts:
 * Valid values for `trailing-commas` are `none`, `es5`, or `all`.
 * Valid values for `semicolons` are `false` and `true`.
 * Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-same-line` are `false` and `true`.
 * Valid values for `bracket-spacing` are `false` and `true`.
 
 <a name="css-config"></a>
@@ -214,6 +219,7 @@ vue:
   trailing-commas: es5
   semicolons: true
   arrow-parens: always
+  bracket-same-line: false
   bracket-spacing: true
   indent-script-and-style: false
   whitespace-sensitivity: css
@@ -236,6 +242,7 @@ vue:
 * Valid values for `trailing-commas` are `none`, `es5`, or `all`.
 * Valid values for `semicolons` are `false` and `true`.
 * Valid values for `arrow-parens` are `avoid` and `always`.
+* Valid values for `bracket-same-line` are `false` and `true`.
 * Valid values for `bracket-spacing` are `false` and `true`.
 * Valid values for `indent-script-and-style` are `false` and `true`.
 * Valid values for `whitespace-sensitivity` are `css`, `strict` and `ignore`.
