@@ -1,6 +1,6 @@
 # CLI Tool
 
-The StyleCI CLI Tool requires [PHP](https://php.net) 7.2.5 or higher, and can be installed either directly downloading the phar, orby using [Composer](https://getcomposer.org/). The tool will allow you to analyze your code using StyleCI, before you push. This tool is licensed under [The Apache License 2.0](https://github.com/StyleCI/CLI/blob/1.2/LICENSE).
+The StyleCI CLI Tool requires [PHP](https://www.php.net/) 7.2.5 or higher, and can be installed either directly downloading the phar, orby using [Composer](https://getcomposer.org/). The tool will allow you to analyze your code using StyleCI, before you push. This tool is licensed under [The Apache License 2.0](https://github.com/StyleCI/CLI/blob/1.2/LICENSE).
 
 <a name="installation"></a>
 ## Installation
@@ -10,7 +10,7 @@ The StyleCI CLI Tool requires [PHP](https://php.net) 7.2.5 or higher, and can be
 Global installation:
 
 ```bash
-$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v1.2.1/styleci.phar \
+$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v1.2.2/styleci.phar \
     && chmod +x styleci.phar && sudo mv styleci.phar /usr/local/bin/styleci
 ```
 
