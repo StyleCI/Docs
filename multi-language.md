@@ -7,7 +7,7 @@ The configuration for each language must now fall under the relevant name. For i
 ```yaml
 php:
   risky: true
-  version: 8.0
+  version: 8.1
   preset: laravel
   enabled:
     - ternary_to_elvis_operator
@@ -73,7 +73,7 @@ Setting `php: true` translates to the following:
 ```yaml
 php:
   risky: false
-  version: 8.0
+  version: 8.1
   preset: recommended
   tab-width: 4
   use-tabs: false
@@ -249,8 +249,6 @@ vue:
 
 <a name="python-config"></a>
 ## Python Config
-
-> {info} Support for Python is currently in beta; a host of features, such as configuring indentation, are under development and will become available as the beta progresses. Any feedback you have on these features is a big help.
 
 Setting `py: true` translates to the following:
 
