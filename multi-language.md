@@ -13,6 +13,7 @@ php:
     - ternary_to_elvis_operator
   disabled:
     - single_import_per_statement
+  monolithic: true
   finder:
     exclude:
       - "modules"
@@ -75,6 +76,7 @@ php:
   risky: false
   version: 8.1
   preset: recommended
+  monolithic: true
   tab-width: 4
   use-tabs: false
   finder:

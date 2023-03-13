@@ -64,6 +64,11 @@ We provide a few premade configurations that tend to be useful. After choosing a
 
 Check out the [Presets](presets) page for more details.
 
+<a name="monolithic"></a>
+## Monolithic
+
+It is possible to set only monolithic PHP files (files without templating outside of the PHP tags) should be fixed. This is specified using the `monolithic` option. `true` and `false` are the allowed values, with `true` the default. It is highly recommended to leave this option alone.
+
 <a name="indentation"></a>
 ## Indentation
 

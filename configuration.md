@@ -45,6 +45,7 @@ Our default (PHP-only) configuration looks like this:
 risky: false
 version: 8.1
 preset: recommended
+monolithic: true
 finder:
   exclude:
     - "modules"
