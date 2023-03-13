@@ -13,7 +13,7 @@ By default, StyleCI will not automatically apply its fixes to your codebase unpr
 <a name="apply-fixes-locally"></a>
 ## How do I apply StyleCI's changes locally
 
-StyleCI is designed so that you don't need to worry about doing this - we can automatically apply our fixes right after you push. However, for those who really want it, we have a CLI tool that can be used to apply our fixes to your code before you push. All we require is that you have PHP 7.2 or higher installed on your machine, and we can fix all your PHP, JS, CSS, Vue.js, and Python code, right then and there! Our CLI tool is available at [https://github.com/StyleCI/CLI](https://github.com/StyleCI/CLI).
+StyleCI is designed so that you don't need to worry about doing this - we can automatically apply our fixes right after you push. However, for those who really want it, we have a CLI tool that can be used to apply our fixes to your code before you push. All we require is that you have PHP 7.4 or higher installed on your machine, and we can fix all your PHP, JS, CSS, Vue.js, and Python code, right then and there! Our CLI tool is available at [https://github.com/StyleCI/CLI](https://github.com/StyleCI/CLI).
 
 <a name="turn-off-notifications"></a>
 ## How do I turn off notification emails
