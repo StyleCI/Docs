@@ -10,7 +10,7 @@ The StyleCI CLI Tool requires [PHP](https://www.php.net/) 7.4 or higher, and can
 Global installation:
 
 ```bash
-$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v1.5.0/styleci.phar \
+$ curl -SsLo styleci.phar https://github.com/StyleCI/CLI/releases/download/v1.5.1/styleci.phar \
     && chmod +x styleci.phar && sudo mv styleci.phar /usr/local/bin/styleci
 ```
 
