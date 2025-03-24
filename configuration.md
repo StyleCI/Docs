@@ -43,7 +43,7 @@ Our default (PHP-only) configuration looks like this:
 
 ```yaml
 risky: false
-version: 8.3
+version: 8.4
 preset: recommended
 monolithic: true
 finder:

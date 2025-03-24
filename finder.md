@@ -7,7 +7,7 @@ Take a look at the below example of a PHP-only configuration:
 ```yaml
 risky: false
 
-version: 8.3
+version: 8.4
 
 presets: recommended
 
