@@ -55,7 +55,7 @@ Some of our fixers do things that can change code behavior, by design. Risky mod
 <a name="version"></a>
 ## Version
 
-It is possible to set the PHP version your code will be parsed using using the `version` option. `7.4`, `8.0`, `8.1`, `8.2`, `8.3`, and `8.4` are the allowed values, and additionally, `7` is an alias for `7.4` and `8` is an alias for `8.4`. PHP version 8.4 is the default version.
+It is possible to set the PHP version your code will be parsed using using the `version` option. `8.0`, `8.1`, `8.2`, `8.3`, and `8.4` are the allowed values, and additionally, `8` is an alias for `8.4`. PHP version 8.4 is the default version.
 
 <a name="presets"></a>
 ## Presets
